@@ -5,12 +5,24 @@
     "vitest.config.*",
     "cypress.config.*",
     "nightwatch.conf.*",
-    "playwright.config.*"
+    "playwright.config.*",
+    "settings",
+    "types"
   ],
   "compilerOptions": {
+    "lib": [
+      "DOM",
+      "ESNext"
+    ],
     "composite": true,
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "types": ["node"]
+    "types": [
+      "node",
+      "vite/client"
+    ],
+    "typeRoots": [
+      "./types"
+    ]
   }
 }
